@@ -1,0 +1,32 @@
+Setting up VS Code with your Anaconda Environment
+The key to using VS Code with Anaconda is to link your project to the specific Anaconda environment you created.
+
+Install the Python Extension: If you haven't already, install the official Python extension from the VS Code Marketplace. This is a crucial step as it provides features like IntelliSense, linting, debugging, and environment management.
+
+Open your Project Folder: In VS Code, open the folder where you want to keep your project files. This will be your workspace.
+
+Select the Python Interpreter: This is the most important part.
+
+Open the Command Palette by pressing Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (macOS).
+
+Type Python: Select Interpreter and press Enter.
+
+A list of available Python interpreters will appear. You should see your Anaconda environment (e.g., tf_env: conda). Select it.
+
+Once selected, the name of your environment will be displayed on the bottom-left of the VS Code status bar.
+
+Open an Integrated Terminal: To run commands like pip install tensorflow, you'll use the integrated terminal in VS Code.
+
+Open it by going to Terminal > New Terminal.
+
+The terminal should automatically activate your selected Anaconda environment. You'll see the environment name in parentheses at the start of the command prompt (e.g., (tf_env) C:\...).
+
+Now, you can run the pip install tensorflow command just as you would in the Anaconda Prompt.
+
+Verify the Installation: Create a new Python file (e.g., test.py) and paste the verification code from the previous response.
+
+Python
+
+import tensorflow as tf
+print(tf.__version__)
+You can run this file by clicking the "Run Python File" play button in the top-right corner or by right-clicking in the editor and selecting "Run Python File in Terminal".
